@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 200px; /* Reduced the size of the logo */
   pointer-events: none;
 }
 
@@ -24,8 +25,61 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-content {
+  margin-top: 20px;
+}
+
+.Task-list {
+  margin-bottom: 20px;
+}
+
+.Team-members-list {
+  margin-top: 20px;
+}
+
+.Task-item, .Team-member-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.Task-item h3, .Team-member-item h3 {
+  margin-top: 0;
+}
+
+.Task-item p, .Team-member-item p {
+  margin-bottom: 5px;
+}
+
+.Task-item button, .Team-member-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.Task-item button:hover, .Team-member-item button:hover {
+  background-color: #c82333;
+}
+
+.Team-member-item button {
+  background-color: #007bff;
+}
+
+.Team-member-item button:hover {
+  background-color: #0056b3;
+}
+
+.Task-form {
+  margin-bottom: 20px;
+}
+
+.Team-member-form {
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {
