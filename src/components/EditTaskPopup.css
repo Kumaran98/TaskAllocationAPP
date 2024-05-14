@@ -1,0 +1,88 @@
+/* EditTaskPopup.css */
+
+.edit-task-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit-task-popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .edit-task-popup-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+    
+  /* Adjust label display to inline-block and width */
+  .edit-task-popup-content label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  /* Adjust input, textarea, and select width */
+  .edit-task-popup-content input,
+  .edit-task-popup-content textarea,
+  .edit-task-popup-content select {
+    width: calc(100% - 22px); /* Subtract the padding and border width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .edit-task-popup-content select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23888"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 40px;
+  }
+  
+  .edit-task-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-task-popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .edit-task-popup-buttons button:first-child {
+    background-color: #4caf50; 
+    color: white;
+  }
+  
+  .edit-task-popup-buttons button:last-child {
+    background-color: #f44336; 
+    color: white;
+  }
+  
+  .success-message {
+    color: green;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
